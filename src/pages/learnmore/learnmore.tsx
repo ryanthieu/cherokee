@@ -25,7 +25,7 @@ export default function LearnMore () {
   })
   useEffect(() => {
     transRef.start()
-  }, [transRef])
+  }, [index])
   return (
     <div className={`flex fill ${styles.container}`} onClick={onClick}>
       {transitions((style, i) => {
