@@ -48,7 +48,7 @@ export default function AdditionalResources () {
   })
   useEffect(() => {
     transRef.start()
-  }, [index])
+  }, [transRef])
   return (
     <div>
     <div>

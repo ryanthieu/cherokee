@@ -46,7 +46,7 @@ export const Quiz = () => {
         setFilteredPosts(posts);
       };
       fetchAllPosts();
-    }, []);
+    }, [postsRef]);
   
     useEffect(() => {
       const newFilteredPosts = allPosts.filter(post => 

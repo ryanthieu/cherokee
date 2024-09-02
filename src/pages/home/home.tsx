@@ -1,7 +1,7 @@
 import '../../App.css';
 import Kaytra3 from '../../images/Kaytra3.png'
 import './home.css';
-import Kaytra from '../../images/Kaytra.png'
+//import Kaytra from '../../images/Kaytra.png'
 import { useNavigate } from 'react-router-dom';
 
 export const Home = () => {
