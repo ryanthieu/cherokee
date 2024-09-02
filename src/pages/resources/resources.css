@@ -1,0 +1,19 @@
+.resourcecontainer{
+    background-color: rgb(252, 247, 247);
+    height:250px;
+    width:750px;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding-top: 25px;
+    margin-bottom: 25px;
+}
+
+.linkpadding{
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.addresources{
+    margin-bottom: 100px;
+}
+

@@ -1,0 +1,234 @@
+@tailwind components;
+@tailwind utilities;
+
+.extragrid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .textcontainer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .infoblock {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px; /* Increased height to accommodate content */
+    padding: 20px 10px; /* Added padding for better spacing */
+  }
+  
+  .infoblock h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .infoblock p {
+    margin: 0;
+    max-width: 300px; /* Adjust this value as needed */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .underlined {
+    color: gray;
+    text-decoration: underline;
+  }
+  
+  
+  .imagecontainer2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .imagecontainer2 img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px; /* Adjust this value as needed */
+  }
+  
+  @media (min-width: 768px) {
+    .textcontainer2 {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .infoblock {
+      width: calc(33.333% - 20px);
+    }
+  
+    .imagecontainer2 {
+      width: 100%;
+      margin-top: 40px;
+    }
+  }
+
+  .homehorizontal{
+    width:100%;
+  }
+
+  .underlinehome{
+    color: transparent;
+    font-size:2rem;
+  }
+
+  .gradient-text-ace {
+    background-image: linear-gradient(to right, red, gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .join-us{
+    margin-bottom:0.2rem;
+  }
+  
+  .custom-blue-button-rounded {
+    color: white;
+    background-color: lightblue; /* bg-red-700 */
+    font-weight: 500;
+    font-size: 1.075rem; /* text-sm */
+    line-height: 1.75rem;
+    padding: 0.625rem 1.25rem; /* px-5 py-2.5 */
+    text-align: center;
+    border-radius: 9999px; /* rounded-full */
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-right: 0.5rem; /* me-2 */
+    margin-bottom: 0.5rem; /* mb-2 */
+  }
+  
+  .custom-red-button-rounded:hover {
+    background-color: darkblue; /* hover:bg-red-800 */
+  }
+  
+  .custom-red-button-rounded:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(252, 165, 165, 0.5); /* focus:ring-4 focus:ring-red-300 */
+  }
+  
+  /* Dark mode styles */
+  @media (prefers-color-scheme: dark) {
+    .custom-red-button-rounded {
+      background-color: #dc2626; /* dark:bg-red-600 */
+    }
+  
+    .custom-red-button-rounded:hover {
+      background-color: #b91c1c; /* dark:hover:bg-red-700 */
+    }
+  
+    .custom-red-button-rounded:focus {
+      box-shadow: 0 0 0 3px rgba(127, 29, 29, 0.5); /* dark:focus:ring-red-900 */
+    }
+  }
+  
+  .expand{
+    color:red;
+  }
+
+  .accessible{
+    color:orange;
+  }
+
+  .whyace{
+    color:rgb(233, 200, 11)
+  }
+ 
+  .custom-chapter-black {
+    margin-bottom: 1rem;
+    margin-top:25px;
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.35;
+    letter-spacing: -0.025em;
+    color: rgb(134, 134, 134); /* text-gray-900 */
+  }
+  
+  .custom-heading-highlight {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: white;
+    background-color:lightblue;
+    /**linear-gradient(to right, red, gold);**/
+    border-radius: 0.25rem;
+  }
+  
+  /* Responsive font sizes */
+  @media (min-width: 768px) {
+    .custom-chapter {
+      font-size: 3rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .custom-chapter {
+      font-size: 3.75rem;
+    }
+  }
+  
+  /* Dark mode */
+  @media (prefers-color-scheme: dark) {
+    .custom-chapter {
+      color: #ffffff;
+    }
+  
+    .custom-heading-highlight {
+      background-color: lightblue;
+      /**linear-gradient(to right, red, gold);**/
+    }
+  }
+
+  .all-in{
+    background-image: linear-gradient(to right, black, gold);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    line-height: 1.5;
+    font-size:4rem;
+  }
+
+  .study-classes{
+    font-size:4rem;
+    line-height:1.5;
+    color:black;
+  }
+
+  .byColor{
+    color:black;
+  }
+
+  .parent-centered-container{
+    background-image: url('../../images/map.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 45px;
+    color:rgb(49, 49, 49);
+  }
+
+  .centered-container{
+    background-color: rgba(173, 216, 230, 0.8)
+    ;
+    width:30%;
+    border-radius: 10px;
+    padding: 20px;
+  }

@@ -1,0 +1,129 @@
+.curtain-page .stage {
+    width: 100%;
+    max-width: 1000px;
+    aspect-ratio: 16 / 9;
+    position: relative;
+    margin: 20px auto;
+    background-color: #1a1a1a;
+    padding: 40px 80px;
+}
+
+.curtain-page .curtain-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.curtain-page .curtain-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Squiggly SVG pattern */
+.curtain-page .stage {
+    --squiggly: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 10 10'%3E%3Cpath d='M0 5 Q2.5 2.5, 5 5 T10 5' fill='none' stroke='%23FFD700' stroke-width='0.5'/%3E%3C/svg%3E");
+}
+
+/* Left Curtain */
+.curtain-page .stage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 100%;
+    background: #8B0000;
+    border-right: 5px solid;
+    border-image: var(--squiggly) 0 20 0 0 repeat;
+    box-shadow: inset -10px 0 20px rgba(0,0,0,0.3);
+    z-index: 2;
+}
+
+/* Right Curtain */
+.curtain-page .stage::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 100%;
+    background: #8B0000;
+    border-left: 5px solid;
+    border-image: var(--squiggly) 0 0 0 20 repeat;
+    box-shadow: inset 10px 0 20px rgba(0,0,0,0.3);
+    z-index: 2;
+}
+
+/* Curtain Drapes */
+.curtain-page .stage .curtain-left,
+.curtain-page .stage .curtain-right {
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    background: #8B0000;
+    z-index: 3;
+}
+
+.curtain-page .stage .curtain-left {
+    left: 0;
+    transform-origin: left;
+    transform: perspective(300px) rotateY(20deg);
+}
+
+.curtain-page .stage .curtain-right {
+    right: 0;
+    transform-origin: right;
+    transform: perspective(300px) rotateY(-20deg);
+}
+
+.curtain-page .stage .curtain-left::before,
+.curtain-page .stage .curtain-right::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 100%);
+}
+
+.curtain-page .stage .curtain-right::before {
+    background: linear-gradient(to left, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 100%);
+}
+
+/* Top Curtain */
+.curtain-page .stage .curtain-top {
+    position: absolute;
+    top: 0;
+    left: 80px;
+    right: 80px;
+    height: 40px;
+    background: #8B0000;
+    border-bottom: 5px solid;
+    border-image: var(--squiggly) 0 0 20 0 repeat;
+    z-index: 4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .curtain-page .stage {
+        padding: 20px 40px;
+    }
+
+    .curtain-page .stage::before,
+    .curtain-page .stage::after,
+    .curtain-page .stage .curtain-left,
+    .curtain-page .stage .curtain-right {
+        width: 40px;
+    }
+
+    .curtain-page .stage .curtain-top {
+        left: 40px;
+        right: 40px;
+        height: 20px;
+    }
+}

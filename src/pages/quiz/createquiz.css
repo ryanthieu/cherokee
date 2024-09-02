@@ -1,0 +1,71 @@
+.title hr{
+    width:86%
+}
+
+.post-body{
+    font-size: 16px; 
+    line-height: 1.5;
+    margin-bottom: 1em;
+    font-weight: normal;
+}
+
+.dropdownselect{
+    width:15%;
+    margin: 10px;
+    border-radius: 5px;
+    height:60px;
+}
+
+.container-border{
+    border-radius:5px;
+}
+
+.post-home-container{
+    /*background-color:rgb(107, 0, 0);**/
+    /*background-color:#e3e3c7;*/
+    background-color:lightblue;
+    width: fit-content;
+    max-width: 100%;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:150px;
+    border-radius: 10px;
+    margin-top:50px;
+}
+
+.dog-image-size{
+    height:200px;
+    width:200px;
+}
+
+.themeselect{
+    height:200px;
+}
+
+.backgroundcontainer{
+    background-color: lightblue;
+    width:50%;
+    margin: 0 auto;
+    border-radius: 16px;
+    padding-bottom:20px;
+    padding-top: 20px;
+}
+
+
+  
+  .posttitle {
+    font-size: 1.25rem; /* Equivalent to text-xl in Tailwind */
+    font-weight: 600; /* Equivalent to font-semibold in Tailwind */
+    color: #000000; /* Equivalent to text-black in Tailwind */
+    text-align: center;
+  }
+
+  .gradient-text-cherokee{
+    color:rgb(60, 74, 79);
+  }
+
+  .pclarify{
+    font-size:0.5rem;
+  }
+  
