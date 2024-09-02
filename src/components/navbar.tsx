@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom';
 import '../App.css';
 import LogoImage from '../images/ace.png'
 import './navbar.css'
-import Button from 'rsuite/Button';
+//import Button from 'rsuite/Button';
 import 'rsuite/Button/styles/index.css';
 
 export const Navbar = () =>{
