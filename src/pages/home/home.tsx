@@ -49,7 +49,7 @@ export const Home = () => {
             <hr />
             <div>
                 <h1 className="custom-chapter-black">The Cherokee<br /> <mark className="custom-heading-highlight">In One Place</mark></h1>
-                <button onClick={() => navigate("/learnmore")} type="button" className="custom-blue-button-rounded">Learn More</button>
+                <button onClick={() => navigate("/information")} type="button" className="custom-blue-button-rounded">Learn More</button>
                 <br /><br /><br />
             </div>
             <hr />

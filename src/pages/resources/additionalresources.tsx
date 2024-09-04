@@ -30,14 +30,13 @@ const pages: ((props: AnimatedProps<{ style: CSSProperties }>) => React.ReactEle
   ({ style }) => <animated.div style={{ ...style, background: 'lightpink' }}><Microlink url="https://americanindian.si.edu/nk360/removal-cherokee/index.html" className="linkpadding" /></animated.div>,
   ({ style }) => <animated.div style={{ ...style, background: 'lightblue' }}><Microlink url="https://loc.gov" className="linkpadding" /> </animated.div>,
   ({ style }) => <animated.div style={{ ...style, background: 'lightgreen' }}><Microlink url="https://motcp.org" className="linkpadding" /></animated.div>,
-  ({ style }) => <animated.div style={{ ...style, background: 'red' }}>hi</animated.div>,
-  ({ style }) => <animated.div style={{ ...style, background: 'brown' }}>ryan</animated.div>,
+ 
   
 ]
 
 export default function AdditionalResources () {
   const [index, set] = useState(0)
-  const onClick = () => set(state => (state + 1) % 5)
+  const onClick = () => set(state => (state + 1) % 3)
   const transRef = useSpringRef()
   const transitions = useTransition(index, {
     ref: transRef,
